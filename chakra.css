@@ -1,0 +1,183 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'msyi', sans-serif;
+    background-color: #123c07;
+    color: #000000;
+}
+
+/* Conteneur principal du site */
+.site-container {
+    align-items: center;
+    position: relative;
+    background-color: #d8c6a5;
+    min-height: 100vh; /* Assure que la page occupe toute la hauteur */
+    min-width: 100%;
+    padding: 0 10px; /* Ajout d'un petit padding pour ne pas toucher les bords */
+}
+
+/* En-tête */
+.article-header {
+    color: #123c07;
+    padding: 15px 0;
+}
+
+.article-header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.article-header nav ul li {
+    margin: 0 10px;
+}
+
+.article-header nav ul li a {
+    font-size: 18px;
+    font-family: "Sinera";
+    color: #123c07;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-header nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Conteneur de l'article (boîte) */
+.article-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: auto; /* Ajusté pour les petits écrans */
+    padding: 20px;
+    width: 100%; /* Utiliser toute la largeur disponible */
+}
+
+.article-content {
+    padding: 20px;
+    width: 100%; /* Occupe toute la largeur de l'écran */
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow-y: auto; /* Permet le défilement du contenu si l'article est long */
+}
+
+/* Titre de l'article */
+.article-title {
+    font-family: "Sinera";
+    font-size: 30px; /* Réduit la taille sur mobile */
+    margin-bottom: 20px;
+    color: #123c07;
+    text-align: center; /* Centré sur mobile */
+}
+
+/* Métadonnées de l'article (auteur, date) */
+.article-meta {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #123c07;
+    text-align: center; /* Centré sur mobile */
+}
+
+.article-meta .article-author {
+    margin-right: 10px;
+}
+
+.article-meta .article-date {
+    margin-left: 10px;
+}
+
+/* Corps de l'article */
+.article-body {
+    font-size: 16px; /* Taille réduite pour mobile */
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.article-body h2 {
+    margin-top: 30px;
+    font-size: 24px; /* Taille réduite pour mobile */
+    color: #123c07;
+}
+
+.article-body p {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.article-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+}
+
+.article-footer p {
+    font-size: 14px;
+}
+
+#h2 {
+    color: #123c07 !important;
+}
+
+/* Version mobile - Écran de 480px et moins */
+@media screen and (max-width: 480px) {
+    /* Ajustements du titre */
+    .article-title {
+        font-size: 26px; /* Plus petit pour s'adapter */
+        margin-bottom: 15px;
+    }
+
+    /* Ajustements de l'en-tête */
+    .article-header nav ul {
+        flex-direction: column; /* Affiche les éléments de navigation en colonne */
+        padding: 10px;
+    }
+
+    .article-header nav ul li {
+        margin-bottom: 10px; /* Espacement entre les liens */
+    }
+
+    .article-header nav ul li a {
+        font-size: 20px;
+    }
+
+    /* Conteneur de l'article */
+    .article-wrapper {
+        padding: 10px;
+        justify-content: center; /* Centre l'article */
+    }
+
+    .article-content {
+        padding: 15px; /* Réduit le padding */
+        width: 100%;
+        max-width: 100%; /* Occupe toute la largeur disponible */
+    }
+
+    /* Métadonnées de l'article */
+    .article-meta {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Corps de l'article */
+    .article-body {
+        font-size: 14px; /* Taille de texte plus petite pour mobile */
+    }
+
+    .article-body h2 {
+        font-size: 22px; /* Ajuste la taille des titres */
+    }
+
+    .article-footer {
+        padding: 15px; /* Réduit le padding du footer */
+        font-size: 12px;
+    }
+}
