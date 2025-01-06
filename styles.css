@@ -157,7 +157,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -286,8 +286,8 @@ section {
 }
 
 .service-text {
-    font-family: "msyi"bold;
-    font-size: 25px; /* Taille de la police */
+    font-family: "msyi";
+    font-size: 27px; /* Taille de la police */
     line-height: 1; /* Hauteur de ligne confortable */
     color: #123c07; /* Couleur du texte */
     margin: 10; /* Pas de marge autour du texte */
@@ -1289,7 +1289,7 @@ section {
         flex-direction: column;
         align-items: center;
         width: 85%; /* Ajustez la largeur selon vos besoins */
-        height: 260px; /* Hauteur des rectangles */
+        height: 265px; /* Hauteur des rectangles */
         margin: 5px 0; /* Ajoute un espacement constant entre les rectangles */
         padding: 0; /* Aucun espace intérieur */
         background-color: #e6e9e4; /* Couleur de fond */
@@ -1506,24 +1506,10 @@ section {
         top: 0;
         left: 0;
         width: 100%;
-        height: 530%; /* Hauteur de 500% de l'écran pour étendre l'élément */
+        height: 512%; /* Hauteur de 500% de l'écran pour étendre l'élément */
         z-index: 10; /* Place l'élément derrière le contenu */
         background-size: cover; /* L'image couvre tout l'écran */
         background-position: center; /* Centrer l'image */
-    }
-
-
-    /* Style général de la section contact */
-    #contact {
-        display: flex;
-        flex-direction: column; /* Aligne les éléments verticalement */
-        justify-content: center; /* Centre verticalement */
-        align-items: center; /* Centre horizontalement */
-        padding: 0px 20px; /* Réduit le padding global */
-        text-align: center; /* Centre tout le contenu de la section */
-        font-family: 'arleta', sans-serif;
-        margin-top: 90px;
-        z-index: 1000;
     }
 
     /* Titre principal */
@@ -1577,6 +1563,190 @@ section {
 
 
 
+
+
+}
+
+
+@media screen and (max-height: 750px) {
+
+
+    .btn-service1 {
+        top: 333%; /* Ajuste davantage pour les tablettes ou petits écrans */
+    }
+
+    .btn-service2 {
+        visibility: hidden;
+        top: 306%;
+    }
+
+    .btn-service3 {
+        visibility: hidden;
+        top: 306%;
+    }
+
+
+    .feuille {
+        height: 538.2%;
+
+    }
+
+    #contact h5, #contact h6 {
+        color: #ffffff;
+        margin-bottom: -20px; /* Réduit l'espace entre les titres */
+        font-weight: normal;
+    }
+
+
+    #titre-present {
+        top: 115%; /* Centré verticalement */
+        left: 25%; /* Décalé vers la gauche */
+        transform: translate(0, -50%); /* Centre l'élément par rapport à son milieu vertical */
+        font-size: 34px; /* Ajustez la taille du texte */
+        max-width: 450px; /* Limite la largeur du paragraphe */
+        text-align: justify; /* Optionnel : justifie le texte */
+        padding: 10px; /* Ajoute un espace intérieur */
+        border-radius: 10px; /* Optionnel : arrondit les bords */
+        z-index: 100;
+    }
+
+
+    .btn {
+        top: 96%;
+    }
+
+
+    #home {
+        background-color: #d8c6a5;
+        z-index: 10;
+    }
+    
+    #about {
+        background-color: #d8c6a5;
+    }
+    
+    #services {
+        background-color: #d8c6a5;
+    }
+    
+    #blog {
+        background-color: #d8c6a5;
+        z-index: 1;
+    }
+    
+    #contact {
+        background-color: #d8c6a5;
+    }
+    
+
+}
+
+
+
+@media screen and (max-height: 930px) {
+
+
+    .btn-service1 {
+        top: 295%; /* Ajuste davantage pour les tablettes ou petits écrans */
+    }
+
+    .btn-service2 {
+        top: 265%;
+    }
+
+    .btn-service3 {
+        top: 265%;
+    }
+
+    .btn {
+        top: 96%;
+    }
+    
+    
+}
+
+
+
+
+
+@media screen and (max-height: 870px) {
+    
+
+    .btn-service1 {
+        top: 269%; /* Ajuste davantage pour les tablettes ou petits écrans */
+    }
+
+    .btn-service2 {
+        top: 269%;
+    }
+
+    .btn-service3 {
+        top: 269%;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-height: 820px) {
+    
+    
+
+    .btn-service1 {
+        top: 273%; /* Ajuste davantage pour les tablettes ou petits écrans */
+    }
+
+    .btn-service2 {
+        top: 273%;
+    }
+
+    .btn-service3 {
+        top: 273%;
+    }
+
+
+}
+
+
+@media screen and (max-height: 780px) {
+    
+
+    .btn-service1 {
+        top: 299%; /* Ajuste davantage pour les tablettes ou petits écrans */
+    }
+
+    .btn-service2 {
+        top: 279%;
+    }
+
+    .btn-service3 {
+        top: 279%;
+    }
+
+
+}
+
+
+@media screen and (max-height: 750px) {
+    
+
+    .btn-service1 {
+        top: 331%; /* Ajuste davantage pour les tablettes ou petits écrans */
+    }
+
+    .btn-service2 {
+        top: 279%;
+    }
+
+    .btn-service3 {
+        top: 279%;
+    }
 
 
 }
